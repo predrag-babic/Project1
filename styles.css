@@ -10,3 +10,9 @@
   border: solid;
   border-radius: 8px;
 }
+
+.navbar-footer {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
