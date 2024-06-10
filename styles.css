@@ -12,7 +12,25 @@
 }
 
 .navbar-footer {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: space-evenly;
-  list-style: none;
+}
+
+.navbar-footer a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.icon_item {
+  margin-right: 8px;
+  transition: filter 0.3s;
+}
+
+.navbar-footer.active a {
+  background-color: yellow;
 }
