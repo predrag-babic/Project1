@@ -1,8 +1,17 @@
-.categorie_list {
+body {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.categorie_list {
+  gap: 10px;
   list-style: none;
-  justify-content: flex-start;
+  display: flex;
+}
+
+.tag_categories {
+  align-self: flex-start;
 }
 
 .list {
@@ -16,6 +25,12 @@
   padding: 0;
   margin: 0;
   display: flex;
+  justify-content: space-evenly;
+  border: solid;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .navbar-footer a {
@@ -23,7 +38,6 @@
   color: black;
   padding: 10px 15px;
   display: flex;
-  align-items: center;
 }
 
 .icon_item {
@@ -31,6 +45,153 @@
   transition: filter 0.3s;
 }
 
-.navbar-footer.active a {
-  background-color: yellow;
+.question_card {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+button:hover {
+  background-color: aquamarine;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer_button {
+  align-self: center;
+}
+
+.question1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer_button1 {
+  align-self: center;
+}
+
+.hide {
+  display: none;
+}
+
+.answer {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.question_card1 {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.profile_info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 36px;
+}
+
+#profile_logo {
+  align-self: center;
+}
+
+i {
+  margin: 20px 0 20px 0;
+}
+
+.counter_list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+.question_counter,
+.bookmarks_counter {
+  border: 4px solid;
+  border-radius: 8px;
+}
+
+.setting_list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.dark_style {
+  margin-top: 4px;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.counter-container {
+  text-align: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+#counterButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header_title {
+  text-align: center;
+  border: solid;
+  top: 0;
+  width: 100%;
+}
+
+.active_icon_item {
+  background-color: rgb(218, 212, 212);
 }
