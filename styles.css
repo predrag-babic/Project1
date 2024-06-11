@@ -1,36 +1,49 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
+  margin: 0;
   min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.categorie_list {
-  gap: 10px;
+main {
+  padding: 0 20px 50px 20px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  text-align: center;
+}
+
+ul {
   list-style: none;
-  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
-.tag_categories {
-  align-self: flex-start;
+.title {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: #e2cece;
+  padding-block: 16px;
 }
 
-.list {
-  background-color: rgb(211, 198, 198);
-  border: solid;
-  border-radius: 8px;
+.navbar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #e2cece;
 }
 
 .navbar-footer {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-  justify-content: space-evenly;
-  border: solid;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  justify-content: space-around;
 }
 
 .navbar-footer a {
@@ -40,39 +53,59 @@ body {
   display: flex;
 }
 
-.icon_item {
-  margin-right: 8px;
-  transition: filter 0.3s;
+.active_icon_item {
+  background-color: rgb(190, 62, 62);
+}
+
+.question_card_list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-block: 24px;
 }
 
 .question_card {
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 20px;
+  gap: 16px;
+  background-color: #ccc;
+  border-radius: 16px;
+  position: relative;
+}
+
+.card_bookmark {
+  position: absolute;
+  top: -16px;
+  right: 16px;
+}
+
+.card_bookmark_dark {
+  position: absolute;
+  top: -16px;
+  right: 16px;
+}
+
+.tag_categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 8px 8px;
+}
+
+.tag_list {
+  background-color: #867777;
+  padding: 4px 16px;
+  border-radius: 4px;
 }
 
 button:hover {
   background-color: aquamarine;
 }
 
-.question {
-  display: flex;
-  flex-direction: column;
-}
-
 .answer_button {
   align-self: center;
-}
-
-.question1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.answer_button1 {
-  align-self: center;
+  padding-block: 8px;
+  border-radius: 4px;
 }
 
 .hide {
@@ -82,14 +115,6 @@ button:hover {
 .answer {
   margin-top: 20px;
   font-size: 18px;
-}
-
-.question_card1 {
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
 }
 
 .profile_info {
@@ -185,13 +210,14 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 
-.header_title {
-  text-align: center;
-  border: solid;
-  top: 0;
-  width: 100%;
+.setting_title {
+  margin-left: 50px;
 }
 
-.active_icon_item {
-  background-color: rgb(218, 212, 212);
+.about-me {
+  margin-left: 50px;
+}
+
+ul {
+  list-style: none;
 }

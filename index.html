@@ -5,46 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="https://kit.fontawesome.com/e3dea0e41d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e3dea0e41d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <header>
-    <div class="header_title">
-      <h1 class="title">Quiz App</h1>
-    </div>
+
+  <header class="header_title">
+    <h1 class="title">Quiz App</h1>
   </header>
+
   <body>
     <main>
-      <div class="question_card">
-        <div class="question">
-        <p>What property flips the axes in flexbox?</p>
-         <button type="button" onclick="showAntwort()" class="answer_button">Show Answer</button>
-        </div>
-        <div id="answer" class="hide answer">
-        <p>flex-direction</p>   
-        </div>
-        <div class="tag_categories">
-          <ul class="categorie_list">
-            <li class="list">#html</li>
-            <li class="list">#flexbox</li>
-            <li class="list">#css</li>
-          </ul>
-        </div>
-      </div>
-     <div class="question_card1">
-        <div class="question1">
-            <p>Lorem Impsum dolor sit?</p>
-             <button type="button" onclick="showAntwort()" class="answer_button1">Show Answer</button>
-            </div>
-            <div id="answer" class="hide answer">
-            <p>The pain of an average man.</p>   
-            </div>
+      <ul role="list" class="question_card_list">
+        <li>
+          <article class="question_card">
+            <h2>What property flips the axes in flexbox?</h2>
+            <button type="button" onclick="showAntwort()" class="answer_button">
+              Show Answer
+            </button>
+            <p id="answer" class="hide answer">flex-direction</p>
+            <ul class="tag_categories">
+              <li class="tag_list">#html</li>
+              <li class="tag_list">#flexbox</li>
+              <li class="tag_list">#css</li>
+            </ul>
+            <button class="card_bookmark">
+              <img
+                class="img-bookmark-white"
+                src="./img/bookmark-white.svg"
+                width="25"
+                alt="bookmark_button"
+              />
+            </button>
+          </article>
+        </li>
+
+        <li>
+          <article class="question_card">
+            <h2>What property flips the axes in flexbox?</h2>
+            <button type="button" onclick="showAntwort()" class="answer_button">
+              Show Answer
+            </button>
+            <p id="answer" class="hide answer">The pain of an average man.</p>
+            <ul class="tag_categories">
+              <li class="tag_list">#html</li>
+              <li class="tag_list">#flexbox</li>
+              <li class="tag_list">#css</li>
+            </ul>
+            <button class="card_bookmark">
+              <img
+                class="img-bookmark-white"
+                src="./img/bookmark-white.svg"
+                width="25"
+                alt="bookmark_button"
+              />
+            </button>
+          </article>
+        </li>
+
+        <li>
+          <article class="question_card">
+            <h2>Veni Vidi Vici?</h2>
+            <button type="button" onclick="showAntwort()" class="answer_button">
+              Show Answer
+            </button>
+            <p id="answer" class="hide answer">I came, I saw, I conquered</p>
+            <ul class="tag_categories">
+              <li class="tag_list">#html</li>
+              <li class="tag_list">#flexbox</li>
+              <li class="tag_list">#css</li>
+            </ul>
+            <button class="card_bookmark">
+              <img
+                class="img-bookmark-white"
+                src="./img/bookmark-white.svg"
+                width="25"
+                alt="bookmark_button"
+              />
+            </button>
+          </article>
+        </li>
+      </ul>
     </main>
-    <footer>
-        <div class="navbar">
-            <ul class="navbar-footer">
-              <li><a class="active_icon_item" href="index.html"><i class="fa-solid fa-house fa-2xl"></i></a></li>
-              <li><a class="icon_item" href="bookmarks.html"><i class="fa-solid fa-bookmark fa-2xl"></i></a></li>
-              <li><a class="icon item" href="profile.html"><i class="fa-solid fa-user fa-2xl"></i></a></li>
-              </ul>
+
+    <footer class="navbar">
+      <nav>
+        <ul class="navbar-footer">
+          <li>
+            <a class="active_icon_item" href="index.html"
+              ><i class="fa-solid fa-house fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a class="icon_item" href="bookmarks.html"
+              ><i class="fa-solid fa-bookmark fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a class="icon item" href="profile.html"
+              ><i class="fa-solid fa-user fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
