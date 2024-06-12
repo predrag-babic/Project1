@@ -36,3 +36,11 @@ function showAntwort2() {
     toggleButton2.textContent = "Show answer";
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("darkModeToggle");
+
+  toggle.addEventListener("change", () => {
+    document.body.classList.toggle("dark-mode", toggle.checked);
+  });
+});
