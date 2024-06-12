@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js"></script>
     <script
       src="https://kit.fontawesome.com/e3dea0e41d.js"
       crossorigin="anonymous"
@@ -21,7 +22,12 @@
         <li>
           <article class="question_card">
             <h2>What property flips the axes in flexbox?</h2>
-            <button type="button" onclick="showAntwort()" class="answer_button">
+            <button
+              type="button"
+              id="toggleButton"
+              onclick="showAntwort()"
+              class="answer_button"
+            >
               Show Answer
             </button>
             <p id="answer" class="hide answer">flex-direction</p>
@@ -43,11 +49,16 @@
 
         <li>
           <article class="question_card">
-            <h2>What property flips the axes in flexbox?</h2>
-            <button type="button" onclick="showAntwort()" class="answer_button">
+            <h2>Lorem Impsum dolor sit?</h2>
+            <button
+              type="button"
+              id="toggleButton1"
+              onclick="showAntwort()"
+              class="answer_button"
+            >
               Show Answer
             </button>
-            <p id="answer" class="hide answer">The pain of an average man.</p>
+            <p id="answer1" class="hide_answer">The pain of an average man.</p>
             <ul class="tag_categories">
               <li class="tag_list">#html</li>
               <li class="tag_list">#flexbox</li>
@@ -67,10 +78,15 @@
         <li>
           <article class="question_card">
             <h2>Veni Vidi Vici?</h2>
-            <button type="button" onclick="showAntwort()" class="answer_button">
+            <button
+              type="button"
+              id="toggleButton2"
+              onclick="showAntwort()"
+              class="answer_button"
+            >
               Show Answer
             </button>
-            <p id="answer" class="hide answer">I came, I saw, I conquered</p>
+            <p id="answer2" class="hide answer">I came, I saw, I conquered</p>
             <ul class="tag_categories">
               <li class="tag_list">#html</li>
               <li class="tag_list">#flexbox</li>
